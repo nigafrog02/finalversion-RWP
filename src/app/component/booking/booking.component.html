@@ -1,0 +1,42 @@
+<app-header></app-header>
+
+<div class="container-fluid">
+    <div class="col-md-4 mt-2">
+      <div class="card border-0 shadow p-3">
+          <div>
+            <div class="form-floating  mb-3 text-center">
+              <h5 class="text-center text-warning "> Booking </h5>
+            </div>
+         
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="email" name="email" [(ngModel)]="email">
+              <label for="email">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="contact" name="contact" [(ngModel)]="contact">
+              <label for="contact">Contact</label>
+            </div>
+            <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="eventName" name="eventname" [(ngModel)]="event_name">
+              <label for="eventname">Event name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="number" class="form-control" id="Price" name="price" [(ngModel)]="ticket">
+              <label for="price">No. of ticket</label>
+            </div>
+    
+            <button type="button" class="btn btn-outline-success" (click)="addBooking()">Confirm</button>
+    
+          <head>
+            <script>
+              
+            </script>
+          </head>
+          
+      
+          </div>
+      </div>
+    </div>
+</div>
+
+

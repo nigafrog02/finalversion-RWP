@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angular-test-b2816": {
+      "hosting": {
+        "firebase-angular": [
+          "angular-test-b2816"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angular-test-b2816"
+  }
+}

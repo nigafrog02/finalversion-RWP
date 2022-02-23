@@ -1,0 +1,30 @@
+<app-header></app-header>
+
+<div  class="container" style= "width:100vw;height:100vh;overflow:hidden">
+<div class="container" >
+       
+    <ngb-carousel>
+      <ng-template ngbSlide *ngFor="let image of images" >
+        <div class="wrapper">
+          <img [src]="image.src" alt="Random first slide" style = min-width:100%  displayflex>
+        </div>
+        
+        <div class="carousel-caption">
+          
+        </div>
+      </ng-template>
+    </ngb-carousel>
+         
+    </div>
+  </div>
+  <app-body></app-body>
+  
+  
+    
+
+
+
+
+
+        
+<!-- Add button to redirect to the add events page -->

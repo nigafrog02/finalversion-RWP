@@ -1,0 +1,11 @@
+.hero{
+    background-image: url('/assets/img/userlogin.jpg')!important;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  h4{
+      font-size: 30px;
+  }
+
+ 

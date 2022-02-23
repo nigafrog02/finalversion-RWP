@@ -1,0 +1,7 @@
+.container-fluid {
+    width: 1000px;
+    height: 600px;
+    position: absolute;
+    top: 28%;
+    left: 40%;
+}
