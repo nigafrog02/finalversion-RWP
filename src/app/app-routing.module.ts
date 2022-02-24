@@ -9,6 +9,9 @@ import { BookingComponent } from './component/booking/booking.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { BillboardComponent } from './component/billboard/billboard.component';
 import { BookingWebComponent } from './component/booking-web/booking-web.component';
+import { KioskComponent } from './component/kiosk/kiosk.component';
+import { KioskBookingComponent } from './component/kiosk-booking/kiosk-booking.component';
+import { AboutusComponent } from './component/aboutus/aboutus.component';
 
 
 const routes: Routes = [
@@ -21,7 +24,10 @@ const routes: Routes = [
   {path:'booking',component:BookingComponent},
   {path:'footer',component:FooterComponent},
   {path:'billboard',component:BillboardComponent},
-  {path:'booking-web',component:BookingWebComponent}
+  {path:'booking-web',component:BookingWebComponent},
+  {path:'kiosk',component:KioskComponent},
+  {path:'kiosk-booking',component:KioskBookingComponent},
+  {path:'aboutus',component:AboutusComponent}
   
 ];
 

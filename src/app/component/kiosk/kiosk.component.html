@@ -1,7 +1,4 @@
-
-<app-header></app-header>
-  <!-- Start of Hero -->
-  <section class="hero is-primary is-bold is-quarterheight has-text-centered">
+<section class="hero is-primary is-bold is-quarterheight has-text-centered">
     <div class="hero-body">
       <p class="title">
         ARV3NT
@@ -11,13 +8,16 @@
       </p>
     </div>
   </section>
-  <!-- End of Hero -->
 
-
-    <div class="col=md8 mt-5">
-      <h5 class="text-danger p-5 text-center"> Coming Events </h5>
+<div class="col=md8 mt-5">
+      <h5 class="text-danger p-5 text-center"> Events Lists</h5>
       <div class="card p-3 dark" shadow>
+        <div class="input-group">
+            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+            <button type="button" class="btn btn-outline-primary">search</button>
+          </div>
         <div class="card-body ">
+            
           <table class="table table-hover table is-bordered ">
             <thead>
               <tr class=" text-center" >
@@ -43,7 +43,7 @@
                 <td>{{artist.end_date}}</td>
                 <td>RM {{artist.price}}</td>
                 <td>
-                  <button class="btn btn-outline-danger " routerLink="/booking-web">Booking</button>
+                  <button class="btn btn-outline-danger " routerLink="/kiosk-booking">Buy Ticket</button>
                 </td>
               </tr>
               
@@ -53,13 +53,3 @@
       </div>
     </div>
   
-    
-    
-
- 
-
-    
- 
-
-  
-    

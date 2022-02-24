@@ -2,6 +2,14 @@
     width: 2000wpx;
     height: 600px;
     position: absolute;
-    top: 28%;
-    left: 34%;
+    top: 20%;
+    left: 32%;
 }
+h5{
+    font-size: 2rem;
+}
+.hero{
+    background-image: url('/assets/img/astraunaut.jpg')!important;
+    background-size: cover;
+    background-position: center center;
+  }

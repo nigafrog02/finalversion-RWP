@@ -1,7 +1,5 @@
-.container-fluid {
-    width: 1000px;
-    height: 600px;
-    position: absolute;
-    top: 28%;
-    left: 40%;
-}
+.hero{
+    background-image: url('/assets/img/userlogin.jpg')!important;
+    background-size: cover;
+    background-position: center center;
+  }

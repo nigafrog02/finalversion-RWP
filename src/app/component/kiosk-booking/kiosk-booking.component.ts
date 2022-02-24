@@ -4,12 +4,11 @@ import { AuthService } from 'src/app/shared/auth.service';
 import { DataService } from 'src/app/shared/data.service';
 
 @Component({
-  selector: 'app-booking',
-  templateUrl: './booking.component.html',
-  styleUrls: ['./booking.component.css']
+  selector: 'app-kiosk-booking',
+  templateUrl: './kiosk-booking.component.html',
+  styleUrls: ['./kiosk-booking.component.css']
 })
-export class BookingComponent implements OnInit {
-
+export class KioskBookingComponent implements OnInit {
   bookingList : Booking[] = [];
   bookingobj : Booking ={
     id: '',
@@ -25,7 +24,6 @@ export class BookingComponent implements OnInit {
     contact: string= '';
     event_name : string= '';
     ticket:number = 0;
-
 
   constructor(private auth : AuthService, private data : DataService) { }
 
@@ -59,6 +57,5 @@ export class BookingComponent implements OnInit {
     }
 
 
-  
 
 }

@@ -4,12 +4,13 @@ import { AuthService } from 'src/app/shared/auth.service';
 import { DataService } from 'src/app/shared/data.service';
 
 @Component({
-  selector: 'app-booking',
-  templateUrl: './booking.component.html',
-  styleUrls: ['./booking.component.css']
+  selector: 'app-booking-web',
+  templateUrl: './booking-web.component.html',
+  styleUrls: ['./booking-web.component.css']
 })
-export class BookingComponent implements OnInit {
+export class BookingWebComponent implements OnInit {
 
+  
   bookingList : Booking[] = [];
   bookingobj : Booking ={
     id: '',
@@ -60,5 +61,4 @@ export class BookingComponent implements OnInit {
 
 
   
-
-}
+  }

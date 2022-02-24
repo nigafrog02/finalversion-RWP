@@ -1,0 +1,17 @@
+.container-fluid{
+    width: 70rem;
+    height: 30rem;
+    position: absolute;
+    top: 24%;
+    left: 37%;
+}
+ 
+h5{
+    font-size: 2rem;
+}
+
+.hero{
+    background-image: url('/assets/img/hall.jpg')!important;
+    background-size: cover;
+    background-position: center center;
+  }

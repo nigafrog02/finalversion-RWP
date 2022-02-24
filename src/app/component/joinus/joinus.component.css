@@ -3,3 +3,12 @@
     height:auto;
     
 }
+.button{
+    height:50px;
+    width:300px;
+    font-size : 20px;
+    left: 2%;
+}
+.carousel-caption{
+    top:46%;
+}
