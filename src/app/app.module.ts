@@ -18,9 +18,10 @@ import { JoinusComponent } from './component/joinus/joinus.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
-import { BodyComponent } from './component/body/body.component';
 import { BookingComponent } from './component/booking/booking.component';
 import { FooterComponent } from './component/footer/footer.component';
+import { BillboardComponent } from './component/billboard/billboard.component';
+import { BookingWebComponent } from './component/booking-web/booking-web.component';
 
 
 
@@ -35,9 +36,11 @@ import { FooterComponent } from './component/footer/footer.component';
     PostEventComponent,
     HeaderComponent,
     JoinusComponent,
-    BodyComponent,
     BookingComponent,
     FooterComponent,
+    BillboardComponent,
+    BookingWebComponent,
+    
     
     
   ],

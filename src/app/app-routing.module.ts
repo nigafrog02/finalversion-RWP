@@ -7,6 +7,8 @@ import { PostEventComponent } from './component/post-event/post-event.component'
 import { JoinusComponent } from './component/joinus/joinus.component';
 import { BookingComponent } from './component/booking/booking.component';
 import { FooterComponent } from './component/footer/footer.component';
+import { BillboardComponent } from './component/billboard/billboard.component';
+import { BookingWebComponent } from './component/booking-web/booking-web.component';
 
 
 const routes: Routes = [
@@ -17,7 +19,9 @@ const routes: Routes = [
   {path:'addevent',component:PostEventComponent},
   {path:'Joinus', component:JoinusComponent},
   {path:'booking',component:BookingComponent},
-  {path:'footer',component:FooterComponent}
+  {path:'footer',component:FooterComponent},
+  {path:'billboard',component:BillboardComponent},
+  {path:'booking-web',component:BookingWebComponent}
   
 ];
 

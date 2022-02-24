@@ -1,0 +1,55 @@
+<section class="hero is-primary is-bold is-quarterheight has-text-centered">
+    <div class="hero-body">
+      <p class="title">
+        ARV3NT
+      </p>
+      <p class="subtitle">
+        Art Events
+      </p>
+    </div>
+  </section>
+  <!-- End of Hero -->
+
+  
+    <div class="col=md8 mt-5">
+      <h5 class="text-danger p-5 text-center"> Events List</h5>
+      <div class="card p-3 dark" shadow>
+        <div class="card-body ">
+          <table class="table table-hover table is-bordered ">
+            <thead>
+              <tr class=" text-center" >
+                <th scope="col"> 🎉Events</th>
+                <th scope="col"> 👩‍🎨Artist</th>
+                <th scope="col">📧Email</th>
+                <th scope="col">📍Location</th>
+                <th scope="col">🎊Event name</th>
+                <th scope="col">📅Start date</th>
+                <th scope="col">📅End date</th>
+                <th scope="col">💵Price</th>
+                <th scope="col">🔖Book Here</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let artist of artistsList">
+                <td><img src="\assets\img\download.jpg" alt="" height=50 width=100></td> 
+                <td>{{artist.last_name}}</td>
+                <td>{{artist.email}}</td>
+                <td>{{artist.contact}}</td>
+                <td>{{artist.event_name}}</td>
+                <td>{{artist.start_date}}</td>
+                <td>{{artist.end_date}}</td>
+                <td>RM {{artist.price}}</td>
+                <td>
+                   <img src="\assets\img\QRCODE2.0.png" alt="" height=50 width=100>
+                </td>
+                
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  
+    
+    
