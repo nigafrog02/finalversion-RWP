@@ -13,7 +13,6 @@ export class PostEventComponent implements OnInit {
 
   artistobj : Artist ={
     id: '',
-    first_name: '',
     last_name: '',
     email: '',
     contact: '',
@@ -24,7 +23,6 @@ export class PostEventComponent implements OnInit {
   };
 
   id:string = '';
-    first_name : string = '';
     last_name : string= '';
     email: string= '';
     contact: string= '';
@@ -40,7 +38,6 @@ export class PostEventComponent implements OnInit {
 
   resetform(){
     this.id = '';
-    this.first_name  = '';
     this.last_name = '';
     this.email= '';
     this.contact= '';
@@ -52,14 +49,13 @@ export class PostEventComponent implements OnInit {
 
   addArtist(){
 
-    if(this.first_name == '' || this.last_name == '' || this.contact == '' || this.email == '' || this.start_date >=this.end_date || this.end_date <= this.start_date || this.event_name == '' || this.price == 0 ){
+    if( this.last_name == '' || this.contact == '' || this.email == '' || this.start_date >=this.end_date || this.end_date <= this.start_date || this.event_name == '' || this.price == 0 ){
       alert('Fill all inputs field please');
       return ;
     }
 
     this.artistobj.id ='';
     this.artistobj.email = this.email;
-    this.artistobj.first_name = this.first_name;
     this.artistobj.last_name = this.last_name;
     this.artistobj.contact = this.contact;
     this.artistobj.event_name = this.event_name;

@@ -13,7 +13,6 @@ export class KioskComponent implements OnInit {
   artistobj : Artist ={
     id: '',
     
-    first_name: '',
     last_name: '',
     email: '',
     contact: '',
@@ -23,7 +22,7 @@ export class KioskComponent implements OnInit {
     price: 0
   };
   id:string = '';
-    first_name : string = '';
+
     last_name : string= '';
     email: string= '';
     contact: string= '';
@@ -57,7 +56,6 @@ export class KioskComponent implements OnInit {
 
   resetform(){
     this.id = '';
-    this.first_name  = '';
     this.last_name = '';
     this.email= '';
     this.contact= '';
@@ -69,13 +67,12 @@ export class KioskComponent implements OnInit {
 
   addArtist(){
 
-    if(this.first_name == '' || this.last_name == '' || this.contact == '' || this.email == '' || this.start_date ==new Date() || this.end_date == new Date() || this.event_name == '' || this.price == 0){
+    if( this.last_name == '' || this.contact == '' || this.email == '' || this.start_date ==new Date() || this.end_date == new Date() || this.event_name == '' || this.price == 0){
       alert('Fill all inputs field please');
     }
 
     this.artistobj.id ='';
     this.artistobj.email = this.email;
-    this.artistobj.first_name = this.first_name;
     this.artistobj.last_name = this.last_name;
     
     this.data.addArtist(this.artistobj);
@@ -90,7 +87,7 @@ export class KioskComponent implements OnInit {
 
   deleteArtist(artist : Artist){
 
-    if(window.confirm('Are you sure u want to delete' + artist.first_name+''+artist.last_name+'?')){
+    if(window.confirm('Are you sure u want to delete' + artist.last_name+'?')){
       this.data.deleteArtist(artist);
     }
     

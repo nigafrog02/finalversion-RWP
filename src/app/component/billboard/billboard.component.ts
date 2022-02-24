@@ -13,7 +13,7 @@ export class BillboardComponent implements OnInit {
   artistobj : Artist ={
     id: '',
     
-    first_name: '',
+
     last_name: '',
     email: '',
     contact: '',
@@ -75,7 +75,6 @@ export class BillboardComponent implements OnInit {
 
     this.artistobj.id ='';
     this.artistobj.email = this.email;
-    this.artistobj.first_name = this.first_name;
     this.artistobj.last_name = this.last_name;
     
     this.data.addArtist(this.artistobj);
@@ -90,7 +89,7 @@ export class BillboardComponent implements OnInit {
 
   deleteArtist(artist : Artist){
 
-    if(window.confirm('Are you sure u want to delete' + artist.first_name+''+artist.last_name+'?')){
+    if(window.confirm('Are you sure u want to delete' +artist.last_name+'?')){
       this.data.deleteArtist(artist);
     }
     
